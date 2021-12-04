@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>beyond40-header-section</title>
+	<link rel="stylesheet" type="text/css" href="./widget.min.css">
+	<link rel="stylesheet" type="text/css" href="./review_header.css">
+</head>
+<body>
+	<section class="review_header">
+		<div class="review_title">Reviews</div>
+		<div  class="review_header_items">
+
+			<div class="review_header_item star_summary">
+				<span class="star_summary_mark"> 
+						<strong>4.9</strong>
+				</span>
+				<span class="star_ratings" aria-hidden="true"> 
+					<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+					<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+					<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+					<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+					<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i> 
+				</span>
+				<span class="star_summary_text" data-count="3219" data-rating="4.9">
+						Based on 3,219 Reviews
+				</span> 
+			</div>
+			<div id="rating_bar_list" class="review_header_item rating_bar_list" onmouseover="addOpacityClass()" onmouseleave="removeOpacityClass()">
+				<div class="rating_bar_item">
+					<span class="rating_bar_star" aria-hidden="true"> 
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i> 
+					</span>
+					<div class="rating_bar">
+					  <div class="realBar" style="width:98%;">&nbsp;</div>
+					</div>
+					<div class="rating_bar_badge">
+						(2928)
+					</div class="rating_bar_badge">
+				</div>
+				<div class="rating_bar_item">
+					<span class="rating_bar_star" aria-hidden="true"> 
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i> 
+					</span>
+					<div class="rating_bar">
+					  <div class="realBar" style="width:30%">&nbsp;</div>
+					</div>
+					<div class="rating_bar_badge">
+						(229)
+					</div>
+				</div>
+				<div class="rating_bar_item">
+					<span class="rating_bar_star" aria-hidden="true"> 
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i> 
+					</span>
+					<div class="rating_bar">
+					  <div class="realBar" style="width:3%">&nbsp;</div>
+					</div>
+					<div class="rating_bar_badge">
+						(50)
+					</div>
+				</div>
+				<div class="rating_bar_item">
+					<span class="rating_bar_star" aria-hidden="true"> 
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i> 
+					</span>
+					<div class="rating_bar">
+					  <div class="realBar" style="width: 0%">&nbsp;</div>
+					</div>
+					<div  class="rating_bar_badge">
+						(5)
+					</div>
+				</div>
+				<div class="rating_bar_item">
+					<span class="rating_bar_star" aria-hidden="true"> 
+						<i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i>
+						<i class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i> 
+					</span>
+					<div class="rating_bar">
+					  <div class="realBar"  style="width: 0%">&nbsp;</div>
+					</div>
+					<div class="rating_bar_badge">
+						(7)
+					</div>
+				</div>
+			</div>
+			<div class="review_header_item review_actions">
+				<span class="stamped-summary-actions" style="display: flex"> 
+					<span class="stamped-summary-actions-newquestion" role="button" style="cursor: pointer;">Ask a Question</span> 
+					<span class="stamped-summary-actions-newreview" role="button" style="cursor: pointer;">Write a Review</span> 
+				</span>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function addOpacityClass() {
+			document.getElementById("rating_bar_list").setAttribute("class", "review_header_item rating_bar_list rating_opacity");
+			console.log(document.getElementById("rating_bar_list").class);
+		}
+		function removeOpacityClass() {
+			document.getElementById("rating_bar_list").setAttribute("class", "review_header_item rating_bar_list");
+			console.log(document.getElementById("rating_bar_list").class);
+		}
+	</script>
+</body>
+</html>
